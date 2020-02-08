@@ -4,7 +4,7 @@
 
     <parent>
         <groupId>me.liheng</groupId>
-        <artifactId>intermediate-mvn</artifactId>
+        <artifactId>pick-random-number</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
