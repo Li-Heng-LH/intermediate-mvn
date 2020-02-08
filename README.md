@@ -5,4 +5,5 @@ Walk through of Udemy tutorial: Java/Apache Maven: The Truth About Building Java
 &nbsp;
 ### Useful links ###
 * http://maven.apache.org/guides/introduction/introduction-to-the-pom.html#
+* http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html
 
