@@ -14,6 +14,12 @@ Walk through of Udemy tutorial: Java/Apache Maven: The Truth About Building Java
 * Benefits: 
   * Avoid redundancy with inheritance
   * Mvn run on parent only
+&nbsp;
+
+##### Plugins #####
+* Recommend to always run `clean` plugin before default/build lifecycle. To make sure all old stuff is cleaned up
+and will not affect the new builds. 
+
 
 
 &nbsp;
@@ -21,4 +27,5 @@ Walk through of Udemy tutorial: Java/Apache Maven: The Truth About Building Java
 ### Useful links ###
 * http://maven.apache.org/guides/introduction/introduction-to-the-pom.html#
 * http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html
+* [List of Built-in Lifecycle Bindings](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
 
