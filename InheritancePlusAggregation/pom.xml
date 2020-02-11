@@ -6,13 +6,17 @@
 
     <groupId>me.liheng</groupId>
     <artifactId>InheritancePlusAggregation</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.8-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
         <module>pickNumberApplication</module>
         <module>randomNumberGen</module>
     </modules>
+
+    <properties>
+        <commons-math3.version>3.2</commons-math3.version>
+    </properties>
 
     <build>
         <pluginManagement>
@@ -35,7 +39,7 @@
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-math3</artifactId>
-                <version>3.2</version>
+                <version>${commons-math3.version}</version>
             </dependency>
 
             <dependency>

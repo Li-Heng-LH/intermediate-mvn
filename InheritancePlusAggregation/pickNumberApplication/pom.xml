@@ -5,7 +5,7 @@
     <parent>
         <groupId>me.liheng</groupId>
         <artifactId>InheritancePlusAggregation</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.8-SNAPSHOT</version>
     </parent>
 
     <artifactId>pickNumberApplication</artifactId>
@@ -15,6 +15,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <commons-math3.version>3.6</commons-math3.version>
     </properties>
 
 
@@ -31,6 +32,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-math3</artifactId>
+            <!--No need version number here. It will pick up overridden version-->
         </dependency>
 
         <dependency>
