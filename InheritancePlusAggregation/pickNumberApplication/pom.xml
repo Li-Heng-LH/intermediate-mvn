@@ -15,7 +15,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <commons-math3.version>3.6</commons-math3.version>
     </properties>
 
 
@@ -32,13 +31,14 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-math3</artifactId>
-            <!--No need version number here. It will pick up overridden version-->
+            <version>3.6</version>
         </dependency>
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+            <version>4.11</version>
         </dependency>
     </dependencies>
 
