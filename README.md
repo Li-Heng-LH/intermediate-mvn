@@ -19,7 +19,10 @@ Walk through of Udemy tutorial: Java/Apache Maven: The Truth About Building Java
 ##### Plugins #####
 * Recommend to always run `clean` plugin before default/build lifecycle. To make sure all old stuff is cleaned up
 and will not affect the new builds. 
+&nbsp;
 
+##### Rules of Overriding #####
+* No <dependencyManagement> and no properties: need to state specific dependency fully. 
 
 
 &nbsp;
