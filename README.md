@@ -3,6 +3,7 @@ Walk through of Udemy tutorial: Java/Apache Maven: The Truth About Building Java
 
 
 &nbsp;
+----
 ### Some Learning Notes ###
 ##### Project Aggregation #####
 * Project Aggregation is not Project Inheritance. 
@@ -22,6 +23,10 @@ and will not affect the new builds.
 &nbsp;
 
 ##### Rules of Overriding #####
+* No, the property of <artifact.version> does not automatically resolve artifact version. It is just a palceholder.
+* Yes, property can inherit from parent. 
+
+
 * No <dependencyManagement> and no properties: need to state specific dependency fully. 
 
 
