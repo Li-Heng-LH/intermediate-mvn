@@ -23,15 +23,16 @@ and will not affect the new builds.
 &nbsp;
 
 ##### Rules of Overriding #####
-* No, the property of <artifact.version> does not automatically resolve artifact version. It is just a palceholder.
+* No, the property of <artifact.version> does not automatically resolve artifact version. It is just a placeholder.
 * Yes, property can inherit from parent. 
 
 
 * No <dependencyManagement> and no properties: need to state specific dependency fully. 
+* No <dependencyManagement> but with properties: properties can be overridden in children. 
 
 
 &nbsp;
-&nbsp;
+----
 ### Useful links ###
 * http://maven.apache.org/guides/introduction/introduction-to-the-pom.html#
 * http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html
