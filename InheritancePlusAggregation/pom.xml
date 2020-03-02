@@ -10,13 +10,30 @@
     <packaging>pom</packaging>
 
     <properties>
-        <commons-math3.version>3.2</commons-math3.version>
+        <!--<commons-math3.version>3.2</commons-math3.version>-->
     </properties>
 
     <modules>
         <module>pickNumberApplication</module>
         <module>randomNumberGen</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-math3</artifactId>
+                <version>3.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <scope>test</scope>
+                <version>4.11</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <pluginManagement>

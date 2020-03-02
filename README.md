@@ -22,13 +22,17 @@ Walk through of Udemy tutorial: Java/Apache Maven: The Truth About Building Java
 and will not affect the new builds. 
 &nbsp;
 
-##### Rules of Overriding #####
+##### Rules of Inheritance #####
 * No, the property of <artifact.version> does not automatically resolve artifact version. It is just a placeholder.
 * Yes, property can inherit from parent. 
+* `<version>` can be inherited from `<dependencyManagement>` : if version is defined in the `<dependencyManagement>` of parent, 
+ child no need to specify `<version>` in dependency. 
 
+&nbsp;
 
-* No <dependencyManagement> and no properties: need to state specific dependency fully. 
-* No <dependencyManagement> but with properties: properties can be overridden in children. 
+##### Rules of Overriding #####
+* No `<dependencyManagement>` and no properties: need to state specific dependency fully. 
+* No `<dependencyManagement>` but with properties: properties can be overridden in children. 
 
 
 &nbsp;
