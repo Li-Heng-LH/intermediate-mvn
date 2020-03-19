@@ -32,9 +32,9 @@ and will not affect the new builds.
 
 ##### Rules of Overriding #####
 * No `<dependencyManagement>` and no properties: need to state specific dependency fully. 
-* No `<dependencyManagement>` but with properties: properties can be overridden in children. 
+* No `<dependencyManagement>` but with properties: override properties in children. 
 * With `<dependencyManagement>` but no properties: override by specifying version number. 
-* With `<dependencyManagement>` and with properties: 
+* With `<dependencyManagement>` and with properties: override properties in children.
 
 
 &nbsp;
