@@ -20,7 +20,7 @@
     </modules>
 
     <properties>
-        <!--<commons-math3.version>3.6</commons-math3.version>-->
+        <commons-math3.version>3.6</commons-math3.version>
     </properties>
 
     <build>
@@ -31,15 +31,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-math3</artifactId>
-                <version>3.6</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
 </project>

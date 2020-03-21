@@ -39,7 +39,8 @@ and will not affect the new builds.
 &nbsp;
 
 #### How to override GrandParent in Parent? ####
-* With `<dependencyManagement>` but no properties: Override with dependency in dependencyManagement of Parent 
+* With `<dependencyManagement>` but no properties: Override with dependency in dependencyManagement of Parent. 
+* With `<dependencyManagement>` and with properties: Override properties in Parent. 
 
 &nbsp;
 
