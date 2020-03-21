@@ -30,12 +30,18 @@ and will not affect the new builds.
 
 &nbsp;
 
-##### Rules of Overriding #####
-* No `<dependencyManagement>` and no properties: need to state specific dependency fully. 
-* No `<dependencyManagement>` but with properties: override properties in children. 
-* With `<dependencyManagement>` but no properties: override by specifying version number. 
-* With `<dependencyManagement>` and with properties: override properties in children.
+##### How to override? #####
+* No `<dependencyManagement>` and no properties: Need to state specific dependency fully. 
+* No `<dependencyManagement>` but with properties: Override properties in children. 
+* With `<dependencyManagement>` but no properties: Override by specifying version number. 
+* With `<dependencyManagement>` and with properties: Override properties in children.
 
+&nbsp;
+
+#### How to override GrandParent in Parent? ####
+* With `<dependencyManagement>` but no properties: Override with dependency in dependencyManagement of Parent 
+
+&nbsp;
 
 &nbsp;
 ----
