@@ -22,32 +22,33 @@ Walk through of Udemy tutorial: Java/Apache Maven: The Truth About Building Java
 and will not affect the new builds. 
 &nbsp;
 
-##### Rules of Inheritance #####
+##### How to override Parent in Children? #####
+* Parent: No `<dependencyManagement>` and no properties: Need to state specific dependency fully. 
+* Parent: No `<dependencyManagement>` but with properties: Override properties in children. 
+* Parent: With `<dependencyManagement>` but no properties: Override by specifying version number. 
+* Parent: With `<dependencyManagement>` and with properties: Override properties in children.
+&nbsp;
+
+##### How to override GrandParent in Parent? #####
+* GrandParent: With `<dependencyManagement>` but no properties: Override with dependency in dependencyManagement of Parent. 
+* GrandParent: With `<dependencyManagement>` and with properties: Override properties in Parent. 
+&nbsp;
+
+##### Some Rules #####
 * No, the property of <artifact.version> does not automatically resolve artifact version. It is just a placeholder.
 * Yes, property can inherit from parent. 
 * `<version>` can be inherited from `<dependencyManagement>` : if version is defined in the `<dependencyManagement>` of parent, 
  child no need to specify `<version>` in dependency. 
-
+* Maven will pick up the nearest property definition for substitution. 
+* `dependencies`: dependencies always imported.    
+`dependencyManagement`: dependencies imported only when needed by children.
 &nbsp;
 
-##### How to override? #####
-* No `<dependencyManagement>` and no properties: Need to state specific dependency fully. 
-* No `<dependencyManagement>` but with properties: Override properties in children. 
-* With `<dependencyManagement>` but no properties: Override by specifying version number. 
-* With `<dependencyManagement>` and with properties: Override properties in children.
-
-&nbsp;
-
-#### How to override GrandParent in Parent? ####
-* With `<dependencyManagement>` but no properties: Override with dependency in dependencyManagement of Parent. 
-* With `<dependencyManagement>` and with properties: Override properties in Parent. 
-
-&nbsp;
 
 &nbsp;
 ----
 ### Useful links ###
-* http://maven.apache.org/guides/introduction/introduction-to-the-pom.html#
-* http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html
+* [Introduction to the POM](http://maven.apache.org/guides/introduction/introduction-to-the-pom.html#)
+* [Setting the -source and -target of the Java Compiler](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html)
 * [List of Built-in Lifecycle Bindings](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
 
