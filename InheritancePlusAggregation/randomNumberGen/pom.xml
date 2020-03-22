@@ -28,11 +28,11 @@
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-math3</artifactId>
-            <!--<version>3.2</version>-->
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.commons</groupId>-->
+            <!--<artifactId>commons-math3</artifactId>-->
+            <!--&lt;!&ndash;<version>3.2</version>&ndash;&gt;-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>junit</groupId>
@@ -40,6 +40,13 @@
             <scope>test</scope>
             <!--<version>4.11</version>-->
         </dependency>
+
+        <dependency>
+            <groupId>me.liheng</groupId>
+            <artifactId>MyLibrary</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 </project>

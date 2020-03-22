@@ -42,6 +42,7 @@ and will not affect the new builds.
 * Maven will pick up the nearest property definition for substitution. 
 * `dependencies`: dependencies always imported.    
 `dependencyManagement`: dependencies imported only when needed by children.
+* In a most basic, non-inheritance project, having `dependencyManagement` only will not import the dependencies. 
 &nbsp;
 
 
