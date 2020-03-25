@@ -45,6 +45,12 @@
             <groupId>me.liheng</groupId>
             <artifactId>MyLibrary</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-collections</groupId>
+                    <artifactId>commons-collections</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
     </dependencies>
