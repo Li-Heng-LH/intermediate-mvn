@@ -45,7 +45,9 @@ and will not affect the new builds.
 * In a most basic, non-inheritance project, having `dependencyManagement` only will not import the dependencies. 
 &nbsp;
 * Inherited dependencies counted as first level. 
-* Can exclude inner libraries layers in. 
+* Can exclude inner dependencies layers in. 
+* A has `dependencyManagement`. A is used as a dependency library. `dependencyManagement` will not work.   
+`dependencyManagement` is for inheritance use.     
 
 
 &nbsp;
