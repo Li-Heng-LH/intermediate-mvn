@@ -44,6 +44,8 @@ and will not affect the new builds.
 `dependencyManagement`: dependencies imported only when needed by children.
 * In a most basic, non-inheritance project, having `dependencyManagement` only will not import the dependencies. 
 &nbsp;
+* Inherited dependencies counted as first level. 
+* Can exclude inner libraries layers in. 
 
 
 &nbsp;
