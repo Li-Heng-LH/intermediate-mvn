@@ -48,7 +48,8 @@ and will not affect the new builds.
 * Can exclude inner dependencies layers in. 
 * A has `dependencyManagement`. A is used as a dependency library. `dependencyManagement` will not work.   
 `dependencyManagement` is for inheritance use.
-* Dependency libraries will use the final/resultant/effective versions as well.     
+* Dependency libraries will use the final/resultant/effective versions as well. 
+* After overriding dependency library's dependency, library will pick up/use the new version and still work.       
 
 
 &nbsp;
