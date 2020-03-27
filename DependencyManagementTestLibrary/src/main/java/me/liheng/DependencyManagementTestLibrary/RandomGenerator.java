@@ -1,4 +1,4 @@
-package me.liheng.DependencyManagementTest;
+package me.liheng.DependencyManagementTestLibrary;
 
 public interface RandomGenerator {
 

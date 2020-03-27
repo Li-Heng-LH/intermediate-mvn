@@ -1,5 +1,8 @@
 package me.liheng.DependencyManagementTest;
 
+import me.liheng.DependencyManagementTestLibrary.DefaultRandomGenerator;
+import me.liheng.DependencyManagementTestLibrary.RandomGenerator;
+
 public class App {
 
     public static void main(String[] args) {

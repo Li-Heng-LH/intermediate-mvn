@@ -47,7 +47,8 @@ and will not affect the new builds.
 * Inherited dependencies counted as first level. 
 * Can exclude inner dependencies layers in. 
 * A has `dependencyManagement`. A is used as a dependency library. `dependencyManagement` will not work.   
-`dependencyManagement` is for inheritance use.     
+`dependencyManagement` is for inheritance use.
+* Dependency libraries will use the final/resultant/effective versions as well.     
 
 
 &nbsp;

@@ -1,4 +1,4 @@
-package me.liheng.DependencyManagementTest;
+package me.liheng.DependencyManagementTestLibrary;
 
 import org.apache.commons.math3.random.RandomDataGenerator;
 
