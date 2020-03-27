@@ -6,10 +6,10 @@ Walk through of Udemy tutorial: Java/Apache Maven: The Truth About Building Java
 ----
 ### Some Learning Notes ###
 ##### Project Aggregation #####
-* Project Aggregation is not Project Inheritance. 
+* **Project Aggregation is not Project Inheritance.** 
 * To achieve project aggregation, module name = artifactId =  directory name
-* Benefits of Project Aggregation: mvn commands that run on parent will be run on children as well. 
-&nbsp;
+* **Benefits of Project Aggregation: mvn commands that run on parent will be run on children as well. 
+&nbsp;**
     
 ##### Project Inheritance Plus Project Aggregation #####
 * Benefits: 
