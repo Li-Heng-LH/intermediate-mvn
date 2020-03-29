@@ -9,7 +9,14 @@ Walk through of Udemy tutorial: Java/Apache Maven: The Truth About Building Java
 * The root cause of the problem is that you have specified a higher Java version for Maven compiler plugin than what Maven knows in your system.
 * A simple solution to this problem is either to reduce your target version in pom.xml 
 * or install a new Java version if you want to build your project in a higher version. 
-* the key to solving this problem is knowing that Maven picks the Java version from the JAVA_HOME variable and not from the PATH environment variable. 
+* the key to solving this problem is knowing that Maven picks the Java version from the `JAVA_HOME` variable and not from the PATH environment variable. 
+&nbsp;
+
+##### Non-transitive Scopes #####
+* provided and test
+* A has dependency on juit. Junit's scope is test. X has dependency on A.  
+X will not import junit due to A. 
+* Library has a non-transitive scope dependency, whoever imports the library will not import the dependency. 
 &nbsp;
 
 ##### Project Aggregation #####
