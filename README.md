@@ -65,7 +65,28 @@ For example, if packaging is `jar`, then the package phase will execute the `jar
 ##### Plugins #####
 * Recommend to always run `clean` plugin before default/build lifecycle. To make sure all old stuff is cleaned up
 and will not affect the new builds. 
+* The binding between goal and phase is known as an execution, which are usually given a meaningful identifier.
+* `<id></id>` exists only for you to be able to distinguish between other executions. 
+* If the plugin isn't bound to a specific phase (process-resources, package, install, etc) your execution will not performed.   
+The plugin's documentation should tell if this is the case. 
+* Goals are either triggered: 
+  * Automatically (implicitly by their default phase or explicitly defined in pom)
+  * By command line execution: `mvn <plugin name>:<goal>` 
+  * this is the answer for this [StackOverflow question](https://stackoverflow.com/questions/33278562/maven-plugin-execution-id).
+* Plugins are executed in [order](https://stackoverflow.com/questions/8243912/changing-the-order-of-maven-plugin-execution). 
 &nbsp;
+
+##### ? Where are plugins stored? #####
+* In local repository as well. 
+* Just that it is not there in the 'External Libraries'. 
+&nbsp;
+
+##### ? Where are plugins inherited from? #####
+* In [Super POM](http://maven.apache.org/components/ref/3-LATEST/maven-model-builder/super-pom.html#) there are no default plugins defined. 
+* Why in a sample [effective pom](https://www.tutorialspoint.com/maven/maven_pom.htm) we can see all default plugins? 
+* They are built in maven: [A Build Phase is Made Up of Plugin Goals](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Lifecycle_Reference)
+&nbsp;
+
 
 ##### How to override Parent in Children? #####
 * Parent: No `<dependencyManagement>` and no properties: Need to state specific dependency fully. 
