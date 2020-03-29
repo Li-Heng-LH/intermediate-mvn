@@ -5,11 +5,17 @@ Walk through of Udemy tutorial: Java/Apache Maven: The Truth About Building Java
 &nbsp;
 ----
 ### Some Learning Notes ###
+##### About invalid target release error #####
+* The root cause of the problem is that you have specified a higher Java version for Maven compiler plugin than what Maven knows in your system.
+* A simple solution to this problem is either to reduce your target version in pom.xml 
+* or install a new Java version if you want to build your project in a higher version. 
+* the key to solving this problem is knowing that Maven picks the Java version from the JAVA_HOME variable and not from the PATH environment variable. 
+&nbsp;
 ##### Project Aggregation #####
 * **Project Aggregation is not Project Inheritance.** 
 * To achieve project aggregation, module name = artifactId =  directory name
-* **Benefits of Project Aggregation: mvn commands that run on parent will be run on children as well. 
-&nbsp;**
+* **Benefits of Project Aggregation: mvn commands that run on parent will be run on children as well.**
+&nbsp;
     
 ##### Project Inheritance Plus Project Aggregation #####
 * Benefits: 
@@ -58,4 +64,5 @@ and will not affect the new builds.
 * [Introduction to the POM](http://maven.apache.org/guides/introduction/introduction-to-the-pom.html#)
 * [Setting the -source and -target of the Java Compiler](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html)
 * [List of Built-in Lifecycle Bindings](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
+* [How to Fix Invalid Target Release: 1.7, 1.8, 1.9, or 1.10 Error in Maven Build](https://dzone.com/articles/how-to-fix-invalid-target-release-17-18-19-or-110)
 
