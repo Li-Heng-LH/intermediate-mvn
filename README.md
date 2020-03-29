@@ -19,6 +19,25 @@ X will not import junit due to A.
 * Library has a non-transitive scope dependency, whoever imports the library will not import the dependency. 
 &nbsp;
 
+##### Project Inheritance #####
+* Most elements from the parent POM are inherited by its children, including: 
+  * scm
+  * properties
+  * repositories
+  * build
+  * reporting
+  * profiles
+
+* Notable elements which are **not** inherited include:
+  * artifactId
+  * name
+  * prerequisites
+&nbsp;
+
+##### dependencyManagement #####
+* Benefits of dependencyManagement: Different children can inherit only what they need. 
+&nbsp;
+
 ##### Project Aggregation #####
 * **Project Aggregation is not Project Inheritance.** 
 * To achieve project aggregation, module name = artifactId =  directory name
@@ -29,6 +48,18 @@ X will not import junit due to A.
 * Benefits: 
   * Avoid redundancy with inheritance
   * Mvn run on parent only
+&nbsp;
+
+##### Project Inheritance V.S Project Aggregation #####
+* A POM project may be inherited from, but does not necessarily have any modules that it aggregates. 
+* Conversely, a POM project may aggregate projects that do not inherit from it. 
+&nbsp;
+
+##### packaging type #####
+* Packaging types define the goals bound to a set of lifecycle stages.  
+For example, if packaging is `jar`, then the package phase will execute the `jar:jar` goal.
+* Default packaging type is `jar`. 
+* The packaging type required to be `pom` for parent and aggregation (multi-module) projects. 
 &nbsp;
 
 ##### Plugins #####
@@ -74,4 +105,6 @@ and will not affect the new builds.
 * [Setting the -source and -target of the Java Compiler](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html)
 * [List of Built-in Lifecycle Bindings](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
 * [How to Fix Invalid Target Release: 1.7, 1.8, 1.9, or 1.10 Error in Maven Build](https://dzone.com/articles/how-to-fix-invalid-target-release-17-18-19-or-110)
+* Very good blogpost: [Mastering Maven: Adding Plugins](https://blogs.oracle.com/developers/mastering-maven-adding-plugins)
+* A list of popular and most commonly used plugins: [mojohaus](https://www.mojohaus.org/plugins.html) 
 
